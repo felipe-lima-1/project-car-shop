@@ -45,11 +45,11 @@ Neste projeto você irá:
 
 ## Requisitos bônus
 
-- [ ] 8 Crie a rota /motorcycles/:id onde seja possível atualizar uma moto por ID
-- [ ] 9. Escreva testes para cobrir 80% da camada de Service
+- [x] 8 Crie a rota /motorcycles/:id onde seja possível atualizar uma moto por ID
+- [x] 9. Escreva testes para cobrir 80% da camada de Service
 
 ## Requisitos não avaliativos
 
-- [ ] 10. Crie a rota /cars/:id onde seja possível excluir um carro por ID
-- [ ] 11. Crie a rota /motorcycles/:id onde seja possível excluir uma moto por ID
-- [ ] 12. Escreva testes de unidade para cobrir 100% da sua aplicação
+- [x] 10. Crie a rota /cars/:id onde seja possível excluir um carro por ID
+- [x] 11. Crie a rota /motorcycles/:id onde seja possível excluir uma moto por ID
+- [x] 12. Escreva testes de unidade para cobrir 100% da sua aplicação
