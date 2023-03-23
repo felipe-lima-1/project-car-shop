@@ -24,6 +24,12 @@ export default class CarService {
     if (!car) return null;
     return new Car(car);
   }
+
+  public async updateCar(id: string, car: ICar) {
+    const updateCar = await this.model.updateCar(id, car);
+    if (!updateCar) return null;
+    return new Car(updateCar);
+  }
 }
 
 // AJUDA DO MURILO DA TRYBE 2 - Default value como false na model//
