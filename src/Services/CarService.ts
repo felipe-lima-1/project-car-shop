@@ -10,14 +10,20 @@ export default class CarService {
   }
     
   public async create(car: ICar): Promise<Car> {
-    const obj = car;
-    if (!car.status) {
-      obj.status = false;
-    }
-    const createCar = await this.model.create(obj);
-    // console.log(createCar, 'AQUIIIIIIIIIIII');
+    const createCar = await this.model.create(car);
     return new Car(createCar);
+  }
+
+  public async getAll() {
+    const cars = await this.model.getAll();
+    return cars.map((car: ICar) => new Car(car));
+  }
+
+  public async getById(id: string) {
+    const car = await this.model.getById(id);
+    if (!car) return null;
+    return new Car(car);
   }
 }
 
-// AJUDA DO MURILO DA TRYBE//
+// AJUDA DO MURILO DA TRYBE 2 - Default value como false na model//
